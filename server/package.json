@@ -1,0 +1,32 @@
+{
+  "name": "mes-server",
+  "version": "1.0.0",
+  "description": "Manufacturing Execution System - Backend Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "db:init": "node config/initDb.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mes",
+    "manufacturing",
+    "oee"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@socket.io/redis-adapter": "^8.3.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.5.2",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1",
+    "pg": "^8.21.0",
+    "redis": "^5.12.1",
+    "socket.io": "^4.8.3"
+  }
+}
